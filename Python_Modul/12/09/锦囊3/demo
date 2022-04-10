@@ -1,0 +1,4 @@
+单次运行不出现，则在运行脚本时添加 -B参数，命令如下：
+python –B .py文件
+永久不出现，设置环境变量如下：
+PYTHONDONTWRITEBYTECODE=1
