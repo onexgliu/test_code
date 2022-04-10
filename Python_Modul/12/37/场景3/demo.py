@@ -1,5 +1,6 @@
 import sys
 import re
+
 print("""
       ****************************************************************
                             企业编码管理系统
@@ -18,24 +19,24 @@ print("""
       ================================================================
     """)
 while True:
-    sys.stdout.write("请通过数字键或者方向键↑↓选择功能：") # 提示用户输入
-    option_str = sys.stdin.readline()[:-1] # 获取用户输入
-    option = re.sub("\D","",option_str)         # 提取数字
-    if int(option) == 1:                          # 选择数字键1执行的菜单
+    sys.stdout.write("请通过数字键或者方向键↑↓选择功能：")  # 提示用户输入
+    option_str = sys.stdin.readline()[:-1]  # 获取用户输入
+    option = re.sub("\D", "", option_str)  # 提取数字
+    if int(option) == 1:  # 选择数字键1执行的菜单
         print("生成6位数字防伪编码 （213563型）")
-    if int(option) == 2:                          # 选择数字键2执行的菜单
+    if int(option) == 2:  # 选择数字键2执行的菜单
         print("生成9位系列产品数字防伪编码(879-335439型)")
-    if int(option) == 3:                          # 选择数字键3执行的菜单
+    if int(option) == 3:  # 选择数字键3执行的菜单
         print("生成25位混合产品序列号(B2R12-N7TE8-9IET2-FE35O-DW2K4型)")
-    if int(option) == 4:                          # 选择数字键4执行的菜单
+    if int(option) == 4:  # 选择数字键4执行的菜单
         print("生成含数据分析功能的防伪编码(5A61M0583D2)")
-    if int(option) == 5:                           # 选择数字键5执行的菜单
+    if int(option) == 5:  # 选择数字键5执行的菜单
         print("半智能防伪码自动生成(按指定样式数量自动生成)")
-    if int(option) == 6:                           # 选择数字键6执行的菜单
+    if int(option) == 6:  # 选择数字键6执行的菜单
         print("后续补加生成防伪码(5A61M0583D2)")
-    if int(option) == 7:                           # 选择数字键7执行的菜单
+    if int(option) == 7:  # 选择数字键7执行的菜单
         print("EAN-13条形码")
-    if int(option) == 8:                           # 选择数字键8执行的菜单
+    if int(option) == 8:  # 选择数字键8执行的菜单
         print("企业粉丝防伪码抽奖")
-    if int(option) == 0:                            # 选择数字键0，退出系统
+    if int(option) == 0:  # 选择数字键0，退出系统
         print("退出系统")

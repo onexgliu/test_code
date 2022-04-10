@@ -1,17 +1,18 @@
 import random
+
 # 老师名称列表
-teachers = ["胡斐","狄云","段誉","郭靖","韦小宝","令狐冲","陈家洛","杨过","石中玉","张无忌"]
+teachers = ["胡斐", "狄云", "段誉", "郭靖", "韦小宝", "令狐冲", "陈家洛", "杨过", "石中玉", "张无忌"]
 while True:
     office_num = input("请输入办公室的个数：")
     least_num = input("请输入每个办公室至少分配老师的个数：")
-    if not office_num.isdigit() or not least_num.isdigit():     # 判断输入的是否由数字组成
+    if not office_num.isdigit() or not least_num.isdigit():  # 判断输入的是否由数字组成
         print("您的输入有误，请重新输入！")
     elif len(teachers) < int(office_num) * int(least_num):
         print("您的输入有误，请重新输入！")
     else:
         break
-office_num = int(office_num)        # 转换为整型
-least_num = int(least_num)          # 转换为整型
+office_num = int(office_num)  # 转换为整型
+least_num = int(least_num)  # 转换为整型
 # 创建办公室列表
 offices = []
 while office_num >= 1:
@@ -23,7 +24,7 @@ for i in range(least_num):
         index = random.randint(0, len(teachers) - 1)
         # 随机选出一名老师并从老师列表中移除
         teacher = teachers.pop(index)
-        office.append(teacher)      # 将选出的老师添加到指定办公室
+        office.append(teacher)  # 将选出的老师添加到指定办公室
 # 将剩下的老师随机分配
 for t in teachers:
     office_index = random.randint(0, len(offices) - 1)

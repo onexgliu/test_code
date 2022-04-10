@@ -1,4 +1,5 @@
 import os  # 文件与操作系统相关模块
+
 path = r'C:/cba.txt'  # 文件路径
 spath = os.fspath(path)  # 获得路径的文件系统表示形式
 try:

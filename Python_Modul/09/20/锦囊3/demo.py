@@ -1,4 +1,5 @@
 import os  # 文件与操作系统相关模块
+
 # 当第三言模块未安装时
 try:
     import numpy  # 导入模块

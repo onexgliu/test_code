@@ -1,4 +1,5 @@
-﻿import math    # 导入数学模块
+﻿import math  # 导入数学模块
+
 print(math.sin(math.pi / 6))
 print(math.sin(-math.pi / 6))
 print(math.sin(0))

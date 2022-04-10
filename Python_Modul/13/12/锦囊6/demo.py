@@ -1,5 +1,6 @@
 ﻿import csv
 import os
+
 path = './tmp/222.csv'
 with open(path, 'r', newline='') as f:
     data = csv.reader(f)
@@ -18,7 +19,7 @@ with open(path, 'r', newline='') as f:
         if not os.path.exists(path):
             with open(path, 'w', newline='') as f:
                 w = csv.writer(f)
-                w.writerow(['n1','n2','n3','n4'])
+                w.writerow(['n1', 'n2', 'n3', 'n4'])
                 w.writerow(row)
             i += 1
         # 如果文件存在，则追加写入数据

@@ -1,2 +1,3 @@
 ﻿import sys
-print(sys.getswitchinterval()) # 输出默认线程间隔
+
+print(sys.getswitchinterval())  # 输出默认线程间隔

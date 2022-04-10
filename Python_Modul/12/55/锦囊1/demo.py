@@ -16,9 +16,13 @@
         # 如果抛出异常，则不会执行hook(*args, **kws)
         warnings.warn(
             'Ignoring unimportable $PYTHONBREAKPOINT: {}'.format(
-                hookname),RuntimeWarning)
+                hookname), RuntimeWarning)
     # 如果实参与函数签名中的参数不匹配，则会抛出TypeError
     return hook(*args, **kws)
+
+
 __breakpointhook__ = breakpointhook
+
 import sys
+
 print(sys.breakpointhook())

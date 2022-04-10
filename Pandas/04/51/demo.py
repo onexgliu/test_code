@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
+
 rng = pd.date_range('20200202', periods=2)
-s1 = pd.Series(np.arange(1,3), index=rng)
+s1 = pd.Series(np.arange(1, 3), index=rng)
 
 s1_6h_asfreq = s1.resample('6H').asfreq()
 print(s1_6h_asfreq)

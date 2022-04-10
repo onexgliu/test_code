@@ -1,4 +1,5 @@
 import time  # 导入时间模块
+
 start_time = time.time()  # 记录开始时间
 for i in range(1000001):  # 循环输出0~1000000
     print(i)

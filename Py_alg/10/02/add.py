@@ -1,6 +1,8 @@
 """
 功能：定义结点类，作用是指向下一个结点
 """
+
+
 class Node():
     def __init__(self, elem):
         self.elem = elem
@@ -10,15 +12,18 @@ class Node():
 """
 功能：定义链表
 """
+
+
 class LinkList(object):
-    def __init__(self,node=None): #使用一个默认参数，在传入头结点时则接收，在没有传入时，就默认头结点为空
-        self.__head = node   # __表示私有属性，不对外开放
+    def __init__(self, node=None):  # 使用一个默认参数，在传入头结点时则接收，在没有传入时，就默认头结点为空
+        self.__head = node  # __表示私有属性，不对外开放
 
     """
     功能：判断链表是否为空
     """
+
     def is_empty(self):
-      return self.__head == None
+        return self.__head == None
 
     """
     功能：求链表长度
@@ -42,9 +47,10 @@ class LinkList(object):
         cur = self.__head  # 指向头结点
 
         while cur != None:
-             print(cur.elem, end=' ')  # 输出链表元素
-             cur = cur.next  # 指向下一个结点
+            print(cur.elem, end=' ')  # 输出链表元素
+            cur = cur.next  # 指向下一个结点
         print()
+
     """
     功能：在头部添加新数据,item是数据
     """
@@ -91,13 +97,14 @@ class LinkList(object):
             node.next = pre.next
             pre.next = node
 
-LinkList_demo = LinkList()#创建链表
-LinkList_demo.add(25)#调用add()函数在头结点添加数据
-LinkList_demo.add(10)#调用add()函数在头结点添加数据
-LinkList_demo.append(39)#调用append()函数在尾结点添加数据
-LinkList_demo.insert(2, 49)#调用insert()函数在第3个结点（结点下标从0开始）添加数据
-LinkList_demo.insert(4, 54)#调用insert()函数在第5个结点（结点下标从0开始）添加数据
-LinkList_demo.insert(0, 60)#调用insert()函数在第1个结点（结点下标从0开始）添加数据
-print ("链表的长度是：",LinkList_demo.LinkList_length())#调用LinkList_length()函数输出链表长度
+
+LinkList_demo = LinkList()  # 创建链表
+LinkList_demo.add(25)  # 调用add()函数在头结点添加数据
+LinkList_demo.add(10)  # 调用add()函数在头结点添加数据
+LinkList_demo.append(39)  # 调用append()函数在尾结点添加数据
+LinkList_demo.insert(2, 49)  # 调用insert()函数在第3个结点（结点下标从0开始）添加数据
+LinkList_demo.insert(4, 54)  # 调用insert()函数在第5个结点（结点下标从0开始）添加数据
+LinkList_demo.insert(0, 60)  # 调用insert()函数在第1个结点（结点下标从0开始）添加数据
+print("链表的长度是：", LinkList_demo.LinkList_length())  # 调用LinkList_length()函数输出链表长度
 print("链表的各个数据分别是：")
-LinkList_demo.LinkList_travel()#调用LinkList_travel()函数输出链表各个数据
+LinkList_demo.LinkList_travel()  # 调用LinkList_travel()函数输出链表各个数据

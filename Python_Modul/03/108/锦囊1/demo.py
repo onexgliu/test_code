@@ -1,4 +1,5 @@
 ﻿import decimal  # 导入十进制定点和浮点运算模块
+
 x = decimal.Decimal(-100)  # 一个数
 y = decimal.Decimal('1.01')  # 第二个数
 z = decimal.Decimal('-2.3')  # 第三个数

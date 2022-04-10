@@ -1,5 +1,6 @@
-﻿from decimal import *      # 导入十进制定点和浮点运算模块
-a = Decimal('1.2000')       # 浮点多0值
+﻿from decimal import *  # 导入十进制定点和浮点运算模块
+
+a = Decimal('1.2000')  # 浮点多0值
 b = Decimal('1.000')
 c = Decimal('0.0')
 d = Decimal('-120.00')

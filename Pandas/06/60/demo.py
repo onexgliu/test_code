@@ -1,4 +1,5 @@
 import numpy as np
+
 n = np.array([0, 30, 45, 60, 90])
 print('不同角度的正弦值：')
 sin = np.sin(n * np.pi / 180)

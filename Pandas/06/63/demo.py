@@ -1,5 +1,6 @@
 import numpy as np
-n=np.array([[1,2,3],[4,5,6],[7,8,9]])
+
+n = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 print('数组元素最大值：')
 print(n.max())
 print('数组中每一行的最大值：')

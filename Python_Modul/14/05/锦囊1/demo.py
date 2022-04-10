@@ -5,6 +5,7 @@
 
 
 import json
-data='{"01":"零基础学Python"}'
-data=json.loads(data)
+
+data = '{"01":"零基础学Python"}'
+data = json.loads(data)
 print(data)

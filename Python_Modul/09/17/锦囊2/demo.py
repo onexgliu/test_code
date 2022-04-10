@@ -1,4 +1,5 @@
 import os  # 文件与操作系统相关模块
+
 project = input('请输入要打开的应用程序名称(如Word、MediaPlayer等)：')
 if project.lower() == 'mediaplayer':
     os.startfile(r'C:\Program Files\Windows Media Player\wmplayer.exe')  # 打开Media Player

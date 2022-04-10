@@ -1,5 +1,6 @@
 import numpy as np
-n1 = np.array([[1,2,3],[4,5,6],[7,8,9]])  #创建数组
+
+n1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])  # 创建数组
 n2 = np.array([10, 10, 10])
 print('两个数组相加：')
 print(np.add(n1, n2))

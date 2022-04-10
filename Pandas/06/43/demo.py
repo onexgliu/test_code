@@ -1,4 +1,5 @@
 import numpy as np
+
 a = np.mat('5 6;7 8')
 b = np.mat([[1, 2], [3, 4]])
 print(a)

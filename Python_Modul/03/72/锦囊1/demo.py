@@ -1,4 +1,5 @@
 ﻿import decimal  # 导入十进制定点和浮点运算模块
+
 d = decimal.Decimal('0.7')
 print('原：', d)
 d2 = decimal.getcontext().copy_decimal(d)  # 复制Decimal对象

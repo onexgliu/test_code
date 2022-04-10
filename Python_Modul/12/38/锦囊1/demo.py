@@ -1,4 +1,5 @@
 ﻿import sys
+
 saveout = sys.stdout  # 在重定向前保存stdout
 # 打开一个新文件用于写入。如果文件不存在，将会被创建。如果文件存在，将被覆盖
 info = open('log.txt', 'w')

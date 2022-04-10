@@ -1,4 +1,6 @@
 ﻿import sys
+
+
 class BaseEventLoop:
     def run_forever(self):
         ...
@@ -10,7 +12,8 @@ class BaseEventLoop:
             ...
         finally:
             ...
-            sys.set_asyncgen_hooks(*old_agen_hooks) # 如果出现异常，设置默认的异步生成器
+            sys.set_asyncgen_hooks(*old_agen_hooks)  # 如果出现异常，设置默认的异步生成器
+
     # 定义异步生成器即将被垃圾回收时调用的函数
     def _asyncgen_finalizer_hook(self, agen):
         self._asyncgens.discard(agen)

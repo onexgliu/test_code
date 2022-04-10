@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.axes3d import Axes3D
 import numpy as np
+
 fig = plt.figure()
 axes3d = Axes3D(fig)
 zs = [1, 5, 10, 15, 20]

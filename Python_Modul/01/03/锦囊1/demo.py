@@ -1,3 +1,4 @@
 import string
-chars = string. ascii_lowercase
+
+chars = string.ascii_lowercase
 print(chars)

@@ -1,4 +1,5 @@
 import pandas as pd
+
 df = pd.DataFrame({'A': [1, 2],
                    'B': [pd.Timestamp('2019'),
                          pd.Timestamp('2020')],

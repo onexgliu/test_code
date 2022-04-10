@@ -1,4 +1,5 @@
 import string
+
 a1 = 'mingrisoft.com'
 b1 = chr(7)
 c1 = chr(88)

@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -99,4 +100,3 @@ class Ui_MainWindow(object):
         self.btn_4.setToolTip(_translate("MainWindow", "热门户型均价分析"))
         self.btn_5.setText(_translate("MainWindow", "二手房售价预测"))
         self.btn_5.setToolTip(_translate("MainWindow", "二手房售价预测"))
-

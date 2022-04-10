@@ -1,4 +1,5 @@
 ﻿from decimal import *  # 导入十进制定点和浮点运算模块
+
 print(Decimal(12) + Decimal(100))  # 整数的加法运算
 print(Decimal('0.1') + Decimal('0.1') - Decimal('0.3'))  # 浮点数的加减混合运算
 print(Decimal('0.1') * 1000)  # 浮点数的乘法运算

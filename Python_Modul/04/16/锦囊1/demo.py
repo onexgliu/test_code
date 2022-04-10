@@ -1,4 +1,5 @@
-﻿import math    # 导入数学模块
+﻿import math  # 导入数学模块
+
 print(math.cos(math.pi / 3))
 print(math.cos(-math.pi / 3))
 print(math.cos(0))

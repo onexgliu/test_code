@@ -1,17 +1,17 @@
-class HashTable:# 创建哈希表
+class HashTable:  # 创建哈希表
     def __init__(self):
-        self.size = 11# 哈希表长度
-        self.throw = [None] * self.size# 哈希表数据键初始化
-        self.data = [None] * self.size# 哈希表数据值初始化
+        self.size = 11  # 哈希表长度
+        self.throw = [None] * self.size  # 哈希表数据键初始化
+        self.data = [None] * self.size  # 哈希表数据值初始化
 
     # 假定最终将有一个空槽，除非 key 已经存在于  self. throw中。 它计算原始
     # 哈希值，如果该槽不为空，则迭代 rehash 函数，直到出现空槽。如果非空槽已经包含 key，
     # 则旧数据值将替换为新数据值。
-    def put(self, key, value):#输出键值
-        hashvalue = self.hashfunction(key, len(self.throw))#创建哈希值
+    def put(self, key, value):  # 输出键值
+        hashvalue = self.hashfunction(key, len(self.throw))  # 创建哈希值
         if self.throw[hashvalue] is None:
-            self.throw[hashvalue] = key# 将key值给哈希表的throw
-            self.data[hashvalue] = value# 将value值给哈希表的data
+            self.throw[hashvalue] = key  # 将key值给哈希表的throw
+            self.data[hashvalue] = value  # 将value值给哈希表的data
         else:
             if self.throw[hashvalue] == key:
                 self.data[hashvalue] = value
@@ -60,9 +60,8 @@ class HashTable:# 创建哈希表
         return self.put(key, value)
 
 
-
-H = HashTable()# 创建哈希表
-H[16] = "红"# 给哈希表赋值
+H = HashTable()  # 创建哈希表
+H[16] = "红"  # 给哈希表赋值
 H[28] = "橙"
 H[32] = "黄"
 H[14] = "绿"
@@ -70,9 +69,8 @@ H[56] = "青"
 H[36] = "蓝"
 H[71] = "紫"
 
-
-print("key的数据是：",H.throw)# 输出键key
-print("value的数据是：",H.data)# 输出值value
-print("结果是:",H[28])# 根据key=28查value
-print("结果是:",H[71])# 根据key=71查value
-print("结果是:",H[93])# 根据key=93查value
+print("key的数据是：", H.throw)  # 输出键key
+print("value的数据是：", H.data)  # 输出值value
+print("结果是:", H[28])  # 根据key=28查value
+print("结果是:", H[71])  # 根据key=71查value
+print("结果是:", H[93])  # 根据key=93查value

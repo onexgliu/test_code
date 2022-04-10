@@ -1,4 +1,5 @@
 ﻿import csv
+
 with open('./tmp/b1.csv', 'w', newline='') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter='；',
                             quotechar='|')

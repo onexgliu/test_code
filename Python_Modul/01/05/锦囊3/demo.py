@@ -1,7 +1,8 @@
 import string
+
 f = open('./tmp/test4.txt', 'r')
-s=f.read()
+s = f.read()
 for c in string.digits:
     print(c)
-    s=s.replace(c,'')
+    s = s.replace(c, '')
 print(s)
